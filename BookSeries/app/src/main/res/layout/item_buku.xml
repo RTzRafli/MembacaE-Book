@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:paddingTop="16dp"
+        android:id="@+id/itemImage"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membaca E-Book"
+        android:layout_toRightOf="@id/itemImage"
+        android:layout_toEndOf="@id/itemImage"
+        android:id="@+id/itemNama"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Petikan Buku"
+        android:id="@+id/itemPetikan"
+        android:layout_toRightOf="@id/itemImage"
+        android:layout_toEndOf="@id/itemImage"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@id/itemNama"
+        />
+</RelativeLayout>
